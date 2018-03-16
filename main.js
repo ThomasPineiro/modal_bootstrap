@@ -3,7 +3,6 @@ $(document).ready(function () {
         var button = $(event.relatedTarget)
         var recipient = button.data('textaffich') 
         var modal = $(this)
-        modal.find('.modal-title').text('New message to ' + recipient)
-        modal.find('.modal-body input').val(recipient)
+        modal.find('.modal-title').text(recipient)
       })
 });
